@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-better-sqlite3",
+  "version": "1.0.0",
+  "description": "A node.js app with express and better-sqlite3 to create sql database with CRUD opertaions.",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "database-setup": "node src/database-setup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/git-santhosh-kumar/nodejs-better-sqlite3.git"
+  },
+  "keywords": [
+    "nodejs",
+    "better-sqlite3"
+  ],
+  "author": "Santhosh Kumar R",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/git-santhosh-kumar/nodejs-better-sqlite3/issues"
+  },
+  "homepage": "https://github.com/git-santhosh-kumar/nodejs-better-sqlite3#readme",
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "express": "^4.21.0"
+  }
+}
