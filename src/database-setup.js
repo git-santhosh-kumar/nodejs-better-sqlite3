@@ -15,12 +15,13 @@ import sqliteDB from "../db.js"
         console.log("createUserTable: ", createUserTable);
 
         // create index
-        db.exec(`CREATE INDEX USERS_index ON USERS(ID, EMAIL);`);
+        db.exec(`CREATE INDEX IF NOT EXISTS USERS_index ON USERS(ID, EMAIL);`);
 
     } catch (err) {
         console.error("DB setup: ", err.message)
         return err;
     } finally {
+        console.timeEnd("**Database Setup Script**");
         db.close(); // Close the DB conection.
     }
 })()
